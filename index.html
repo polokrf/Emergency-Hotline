@@ -26,7 +26,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
 </head>
-<body class="bg-[#41FF6B15] h-[100vh]">
+<body>
   <!--* header area coding start -->
   <header class="flex bg-[#FFFFFF] justify-between items-center py-6 px-[64px]">
     <div class="flex justify-center items-center">
@@ -63,275 +63,310 @@
     </div>
   </section>
 
-  <!-- *card section -->
-  <section class="">
-    <div class="w-[350px] p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
-      <div class="flex justify-between items-center">
-        <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
-        <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
-       
-      </div>
+ 
+   <section class="flex p-[60px] items-stretch">
 
-      <!-- * title and subtitle -->
-      <div class="mb-[20px]">
-        <h2 class="font-semibold text-[24px]">জাতীয় জরুরি সেবা</h2>
-        <h4 class="text-[#5C5C5C] capitalize">National Emergency</h4>
-      </div>
-      <!-- * title of number -->
-      <h3 class="text-[#111111] font-semibold text-[26px]">999</h3>
-      <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">সার্বজনীন</p>
-
-      <!-- * button div -->
-      <div class="flex items-center ">
-        <!-- *copy button -->
-        <button class="px-7 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i class="fa-solid fa-copy"></i> copy</button>
-
-        <!-- * call button -->
-        <button class="px-7 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i class="fa-solid fa-phone block"></i> Call</button>
-      </div>
-    </div>
-
-    <!-- *Police card -->
-    <div class="w-[350px] p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
-      <div class="flex justify-between items-center">
-        <img class="w-[50px] mb-[15px]" src="assets/police.png" alt="">
-        <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
-    
-      </div>
-    
-      <!-- * title and subtitle -->
-      <div class="mb-[20px]">
-        <h2 class="font-semibold text-[24px]">পুলিশ</h2>
-        <h4 class="text-[#5C5C5C] capitalize">Police</h4>
-      </div>
-      <!-- * title of number -->
-      <h3 class="text-[#111111] font-semibold text-[26px]">999</h3>
-      <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">পুলিশ</p>
-    
-      <!-- * button div -->
-      <div class="flex items-center ">
-        <!-- *copy button -->
-        <button
-          class="px-7 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
-            class="fa-solid fa-copy"></i> copy</button>
-    
-        <!-- * call button -->
-        <button class="px-7 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
-            class="fa-solid fa-phone block"></i> Call</button>
-      </div>
-    </div>
-
-    <!-- *Fire Service card -->
-      <div class="w-[350px] p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
-        <div class="flex justify-between items-center">
-          <img class="w-[50px] mb-[15px]" src="assets/fire-service.png" alt="">
-          <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
+    <!-- *card section -->
+      <div id="card-main" class="  mr-[40px] w-[80%] grid grid-cols-3 gap-4">
+        <div class=" p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
+          <div class="flex justify-between items-center">
+            <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
+            <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
       
+          </div>
+      
+          <!-- * title and subtitle -->
+          <div class="mb-[20px]">
+            <h2 class="font-semibold text-[24px]">জাতীয় জরুরি সেবা</h2>
+            <h4 class="text-[#5C5C5C] capitalize">National Emergency</h4>
+          </div>
+          <!-- * title of number -->
+          <h3 class="text-[#111111] font-semibold text-[26px]">999</h3>
+          <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">সার্বজনীন</p>
+      
+          <!-- * button div -->
+          <div class="flex items-center ">
+            <!-- *copy button -->
+            <button
+              class="px-4 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
+                class="fa-solid fa-copy"></i> copy</button>
+      
+            <!-- * call button -->
+            <button class="px-4 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
+                class="fa-solid fa-phone block"></i> Call</button>
+          </div>
         </div>
       
-        <!-- * title and subtitle -->
-        <div class="mb-[20px]">
-          <h2 class="font-semibold text-[24px]">ফায়ার সার্ভিস</h2>
-          <h4 class="text-[#5C5C5C] capitalize">Fire Service</h4>
+        <!-- *Police card -->
+        <div class=" p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
+          <div class="flex justify-between items-center">
+            <img class="w-[50px] mb-[15px]" src="assets/police.png" alt="">
+            <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
+      
+          </div>
+      
+          <!-- * title and subtitle -->
+          <div class="mb-[20px]">
+            <h2 class="font-semibold text-[24px]">পুলিশ</h2>
+            <h4 class="text-[#5C5C5C] capitalize">Police</h4>
+          </div>
+          <!-- * title of number -->
+          <h3 class="text-[#111111] font-semibold text-[26px]">999</h3>
+          <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">পুলিশ</p>
+      
+          <!-- * button div -->
+          <div class="flex items-center ">
+            <!-- *copy button -->
+            <button
+              class="px-4 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
+                class="fa-solid fa-copy"></i> copy</button>
+      
+            <!-- * call button -->
+            <button class="px-4 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
+                class="fa-solid fa-phone block"></i> Call</button>
+          </div>
         </div>
-        <!-- * title of number -->
-        <h3 class="text-[#111111] font-semibold text-[26px]">999</h3>
-        <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">ফায়ার</p>
       
-        <!-- * button div -->
-        <div class="flex items-center ">
-          <!-- *copy button -->
-          <button
-            class="px-7 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
-              class="fa-solid fa-copy"></i> copy</button>
+        <!-- *Fire Service card -->
+        <div class=" p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
+          <div class="flex justify-between items-center">
+            <img class="w-[50px] mb-[15px]" src="assets/fire-service.png" alt="">
+            <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
       
-          <!-- * call button -->
-          <button class="px-7 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
-              class="fa-solid fa-phone block"></i> Call</button>
+          </div>
+      
+          <!-- * title and subtitle -->
+          <div class="mb-[20px]">
+            <h2 class="font-semibold text-[24px]">ফায়ার সার্ভিস</h2>
+            <h4 class="text-[#5C5C5C] capitalize">Fire Service</h4>
+          </div>
+          <!-- * title of number -->
+          <h3 class="text-[#111111] font-semibold text-[26px]">999</h3>
+          <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">ফায়ার</p>
+      
+          <!-- * button div -->
+          <div class="flex items-center ">
+            <!-- *copy button -->
+            <button
+              class="px-4 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
+                class="fa-solid fa-copy"></i> copy</button>
+      
+            <!-- * call button -->
+            <button class="px-4 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
+                class="fa-solid fa-phone block"></i> Call</button>
+          </div>
+        </div>
+      
+        <!--*Ambulance card  -->
+        <div class=" p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
+          <div class="flex justify-between items-center">
+            <img class="w-[50px] mb-[15px]" src="assets/ambulance.png" alt="">
+            <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
+      
+          </div>
+      
+          <!-- * title and subtitle -->
+          <div class="mb-[20px]">
+            <h2 class="font-semibold text-[24px]">অ্যাম্বুলেন্স</h2>
+            <h4 class="text-[#5C5C5C] capitalize">Ambulance</h4>
+          </div>
+          <!-- * title of number -->
+          <h3 class="text-[#111111] font-semibold text-[26px]">1994-999999</h3>
+          <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">স্বাস্থ্য</p>
+      
+          <!-- * button div -->
+          <div class="flex items-center ">
+            <!-- *copy button -->
+            <button
+              class="px-4 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
+                class="fa-solid fa-copy"></i> copy</button>
+      
+            <!-- * call button -->
+            <button class="px-4 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
+                class="fa-solid fa-phone block"></i> Call</button>
+          </div>
+        </div>
+      
+        <!-- *Women & Child Helpline card -->
+        <div class=" p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
+          <div class="flex justify-between items-center">
+            <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
+            <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
+      
+          </div>
+      
+          <!-- * title and subtitle -->
+          <div class="mb-[20px]">
+            <h2 class="font-semibold text-[24px]">নারী ও শিশু সহায়তা</h2>
+            <h4 class="text-[#5C5C5C] capitalize">Women & Child Helpline</h4>
+          </div>
+          <!-- * title of number -->
+          <h3 class="text-[#111111] font-semibold text-[26px]">109</h3>
+          <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">সহায়তা</p>
+      
+          <!-- * button div -->
+          <div class="flex items-center ">
+            <!-- *copy button -->
+            <button
+              class="px-4 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
+                class="fa-solid fa-copy"></i> copy</button>
+      
+            <!-- * call button -->
+            <button class="px-4 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
+                class="fa-solid fa-phone block"></i> Call</button>
+          </div>
+        </div>
+      
+        <!-- *Anti-Corruption card -->
+        <div class=" p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
+          <div class="flex justify-between items-center">
+            <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
+            <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
+      
+          </div>
+      
+          <!-- * title and subtitle -->
+          <div class="mb-[20px]">
+            <h2 class="font-semibold text-[24px]">দুদক</h2>
+            <h4 class="text-[#5C5C5C] capitalize">Anti-Corruption</h4>
+          </div>
+          <!-- * title of number -->
+          <h3 class="text-[#111111] font-semibold text-[26px]">106</h3>
+          <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">সরকারি</p>
+      
+          <!-- * button div -->
+          <div class="flex items-center ">
+            <!-- *copy button -->
+            <button
+              class="px-4 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
+                class="fa-solid fa-copy"></i> copy</button>
+      
+            <!-- * call button -->
+            <button class="px-4 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
+                class="fa-solid fa-phone block"></i> Call</button>
+          </div>
+        </div>
+      
+        <!-- *Electricity Outage card -->
+        <div class=" p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
+          <div class="flex justify-between items-center">
+            <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
+            <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
+      
+          </div>
+      
+          <!-- * title and subtitle -->
+          <div class="mb-[20px]">
+            <h2 class="font-semibold text-[24px]">বিদ্যুৎ বিভ্রাট</h2>
+            <h4 class="text-[#5C5C5C] capitalize">Electricity Outage</h4>
+          </div>
+          <!-- * title of number -->
+          <h3 class="text-[#111111] font-semibold text-[26px]">16216</h3>
+          <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">বিদ্যুৎ</p>
+      
+          <!-- * button div -->
+          <div class="flex items-center ">
+            <!-- *copy button -->
+            <button
+              class="px-4 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
+                class="fa-solid fa-copy"></i> copy</button>
+      
+            <!-- * call button -->
+            <button class="px-4 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
+                class="fa-solid fa-phone block"></i> Call</button>
+          </div>
+        </div>
+      
+        <!-- *Brac card -->
+        <div class=" p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
+          <div class="flex justify-between items-center">
+            <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
+            <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
+      
+          </div>
+      
+          <!-- * title and subtitle -->
+          <div class="mb-[20px]">
+            <h2 class="font-semibold text-[24px]">ব্র্যাক</h2>
+            <h4 class="text-[#5C5C5C] capitalize">Brac</h4>
+          </div>
+          <!-- * title of number -->
+          <h3 class="text-[#111111] font-semibold text-[26px]">16445</h3>
+          <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">এনজিও</p>
+      
+          <!-- * button div -->
+          <div class="flex items-center ">
+            <!-- *copy button -->
+            <button
+              class="px-4 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
+                class="fa-solid fa-copy"></i> copy</button>
+      
+            <!-- * call button -->
+            <button class="px-4 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
+                class="fa-solid fa-phone block"></i> Call</button>
+          </div>
+        </div>
+      
+        <!-- *Bangladesh Railway card -->
+        <div class=" p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
+          <div class="flex justify-between items-center">
+            <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
+            <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
+      
+          </div>
+      
+          <!-- * title and subtitle -->
+          <div class="mb-[20px]">
+            <h2 class="font-semibold text-[24px]">বাংলাদেশ রেলওয়ে</h2>
+            <h4 class="text-[#5C5C5C] capitalize">Bangladesh Railway</h4>
+          </div>
+          <!-- * title of number -->
+          <h3 class="text-[#111111] font-semibold text-[26px]">163</h3>
+          <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">পরিবহন</p>
+      
+          <!-- * button div -->
+          <div class="flex items-center ">
+            <!-- *copy button -->
+            <button
+              class="px-4 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
+                class="fa-solid fa-copy"></i> copy</button>
+      
+            <!-- * call button -->
+            <button class="px-4 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
+                class="fa-solid fa-phone block"></i> Call</button>
+          </div>
         </div>
       </div>
 
-      <!--*Ambulance card  -->
-    <div class="w-[350px] p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
-      <div class="flex justify-between items-center">
-        <img class="w-[50px] mb-[15px]" src="assets/ambulance.png" alt="">
-        <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
-    
-      </div>
-    
-      <!-- * title and subtitle -->
-      <div class="mb-[20px]">
-        <h2 class="font-semibold text-[24px]">অ্যাম্বুলেন্স</h2>
-        <h4 class="text-[#5C5C5C] capitalize">Ambulance</h4>
-      </div>
-      <!-- * title of number -->
-      <h3 class="text-[#111111] font-semibold text-[26px]">1994-999999</h3>
-      <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">স্বাস্থ্য</p>
-    
-      <!-- * button div -->
-      <div class="flex items-center ">
-        <!-- *copy button -->
-        <button
-          class="px-7 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
-            class="fa-solid fa-copy"></i> copy</button>
-    
-        <!-- * call button -->
-        <button class="px-7 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
-            class="fa-solid fa-phone block"></i> Call</button>
-      </div>
-    </div>
+      <!-- *Call History aside bar -->
+       <aside class="w-[30%] bg-[#ffff]  p-[30px] shadow-md rounded-lg">
+        
+          <div class="flex justify-between  items-baseline   ">
+            <div class="flex gap-2 items-baseline">
+              <i class="text-[#5C5C5C] text-[20px] fa-regular fa-alarm-clock"></i>
+              <h2 class="font-semibold text-[22px]">Call History</h2>
+            </div>
+            <div>
+              <button
+                class="bg-[#00A63E] text-[#ffff] capitalize py-[12px] px-[36px] cursor-pointer rounded-3xl font-bold">Clear</button>
+            </div>
 
-<!-- *Women & Child Helpline card -->
-  <div class="w-[350px] p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
-    <div class="flex justify-between items-center">
-      <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
-      <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
-  
-    </div>
-  
-    <!-- * title and subtitle -->
-    <div class="mb-[20px]">
-      <h2 class="font-semibold text-[24px]">নারী ও শিশু সহায়তা</h2>
-      <h4 class="text-[#5C5C5C] capitalize">Women & Child Helpline</h4>
-    </div>
-    <!-- * title of number -->
-    <h3 class="text-[#111111] font-semibold text-[26px]">109</h3>
-    <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">সহায়তা</p>
-  
-    <!-- * button div -->
-    <div class="flex items-center ">
-      <!-- *copy button -->
-      <button
-        class="px-7 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
-          class="fa-solid fa-copy"></i> copy</button>
-  
-      <!-- * call button -->
-      <button class="px-7 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
-          class="fa-solid fa-phone block"></i> Call</button>
-    </div>
-  </div>
+          </div>
+        <!-- * set Date or time div -->
+        <div class="flex justify-between items-center mt-10 bg-[#FAFAFA] p-[15px] shadow-md border-2 border-gray-100 rounded-[10px] mb-[15px]">
+          <div>
+            <h3 class="text-[18px] font-semibold">জাতীয় জরুরি সেবা</h3>
+            <p class="text-[18px] text-[#5C5C5C]">999</p>
+          </div>
+          <!-- *Time div -->
+          <div>
+            <p>11:36:58 AM</p>
+          </div>
+        </div>
+       </aside>
+   </section>
 
-  <!-- *Anti-Corruption card -->
-  <div class="w-[350px] p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
-    <div class="flex justify-between items-center">
-      <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
-      <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
-  
-    </div>
-  
-    <!-- * title and subtitle -->
-    <div class="mb-[20px]">
-      <h2 class="font-semibold text-[24px]">দুদক</h2>
-      <h4 class="text-[#5C5C5C] capitalize">Anti-Corruption</h4>
-    </div>
-    <!-- * title of number -->
-    <h3 class="text-[#111111] font-semibold text-[26px]">106</h3>
-    <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">সরকারি</p>
-  
-    <!-- * button div -->
-    <div class="flex items-center ">
-      <!-- *copy button -->
-      <button
-        class="px-7 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
-          class="fa-solid fa-copy"></i> copy</button>
-  
-      <!-- * call button -->
-      <button class="px-7 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
-          class="fa-solid fa-phone block"></i> Call</button>
-    </div>
-  </div>
 
-<!-- *Electricity Outage card -->
-    <div class="w-[350px] p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
-      <div class="flex justify-between items-center">
-        <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
-        <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
-    
-      </div>
-    
-      <!-- * title and subtitle -->
-      <div class="mb-[20px]">
-        <h2 class="font-semibold text-[24px]">বিদ্যুৎ বিভ্রাট</h2>
-        <h4 class="text-[#5C5C5C] capitalize">Electricity Outage</h4>
-      </div>
-      <!-- * title of number -->
-      <h3 class="text-[#111111] font-semibold text-[26px]">16216</h3>
-      <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">বিদ্যুৎ</p>
-    
-      <!-- * button div -->
-      <div class="flex items-center ">
-        <!-- *copy button -->
-        <button
-          class="px-7 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
-            class="fa-solid fa-copy"></i> copy</button>
-    
-        <!-- * call button -->
-        <button class="px-7 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
-            class="fa-solid fa-phone block"></i> Call</button>
-      </div>
-    </div>
-
-    <!-- *Brac card -->
-      <div class="w-[350px] p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
-        <div class="flex justify-between items-center">
-          <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
-          <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
-      
-        </div>
-      
-        <!-- * title and subtitle -->
-        <div class="mb-[20px]">
-          <h2 class="font-semibold text-[24px]">ব্র্যাক</h2>
-          <h4 class="text-[#5C5C5C] capitalize">Brac</h4>
-        </div>
-        <!-- * title of number -->
-        <h3 class="text-[#111111] font-semibold text-[26px]">16445</h3>
-        <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">এনজিও</p>
-      
-        <!-- * button div -->
-        <div class="flex items-center ">
-          <!-- *copy button -->
-          <button
-            class="px-7 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
-              class="fa-solid fa-copy"></i> copy</button>
-      
-          <!-- * call button -->
-          <button class="px-7 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
-              class="fa-solid fa-phone block"></i> Call</button>
-        </div>
-      </div>
-
-      <!-- *Bangladesh Railway card -->
-      <div class="w-[350px] p-[32px] bg-[#FFFFFF] shadow-md rounded-lg">
-        <div class="flex justify-between items-center">
-          <img class="w-[50px] mb-[15px]" src="assets/emergency.png" alt="">
-          <i class="fa-regular fa-heart text-[20px] text-[#5C5C5C] cursor-pointer"></i>
-      
-        </div>
-      
-        <!-- * title and subtitle -->
-        <div class="mb-[20px]">
-          <h2 class="font-semibold text-[24px]">বাংলাদেশ রেলওয়ে</h2>
-          <h4 class="text-[#5C5C5C] capitalize">Bangladesh Railway</h4>
-        </div>
-        <!-- * title of number -->
-        <h3 class="text-[#111111] font-semibold text-[26px]">163</h3>
-        <p class="text-[18px] inline-block rounded-2xl py-2 px-2 text-[#5C5C5C] bg-[#F2F2F2] mb-4">পরিবহন</p>
-      
-        <!-- * button div -->
-        <div class="flex items-center ">
-          <!-- *copy button -->
-          <button
-            class="px-7 py-2 rounded-[8px] capitalize text-[#5C5C5C] bg-white cursor-pointer shadow-md border-2 border-gray-100 block  mr-[20px] "><i
-              class="fa-solid fa-copy"></i> copy</button>
-      
-          <!-- * call button -->
-          <button class="px-7 py-2 rounded-[8px] capitalize text-[#ffff] bg-[#00A63E] cursor-pointer shadow-md"><i
-              class="fa-solid fa-phone block"></i> Call</button>
-        </div>
-      </div>
-
-    
-  </section>
+ 
 </body>
 </html>

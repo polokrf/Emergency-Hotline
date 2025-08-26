@@ -1,4 +1,15 @@
 *{
  box-sizing: border-box;
   font-family: "Hind Madurai", sans-serif;
+  
 }
+body{
+  background-color: #41FF6B15;
+  height: 100%;
+}
+
+/* #card-main{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+} */
