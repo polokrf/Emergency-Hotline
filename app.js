@@ -1,3 +1,6 @@
+let countCall = [];
+
+
 // * display block
 document.getElementById('call-history').addEventListener('click', function (e) {
   e.preventDefault();
@@ -42,6 +45,13 @@ function getValueText(id) {
   let coinCut = parseInt(text.innerText);
   return coinCut;
 }
+function getValueTexts(id) {
+  
+  let text = document.getElementById(id);
+  
+  return text;
+}
+
 
 // * set value in inner text
 
@@ -52,6 +62,7 @@ document.getElementById('call-button1').addEventListener('click',function() {
   let coinGet = getValueText('coin');
   let subtitleText = document.getElementById('subtitle1').innerText;
   let numberOfServes = document.getElementById('number1').innerText;
+
  
   let amount = 20;
   if (coinGet === 0) {
@@ -62,9 +73,21 @@ document.getElementById('call-button1').addEventListener('click',function() {
   }
   
   let minsNumber = coinGet - amount;
- document.getElementById('coin').innerText = minsNumber;
+  document.getElementById('coin').innerText = minsNumber;
+
+  let obj = {
+    name: 'জাতীয় জরুরি সেবা',
+    number: 999,
+    date: new Date().toLocaleTimeString()
+  };
+
+  countCall.push(obj)
 
 })
+
+
+
+
 
 // * 2nd coin function
 document.getElementById('call-button2').addEventListener('click',function() {
@@ -82,7 +105,16 @@ document.getElementById('call-button2').addEventListener('click',function() {
   }
   
   let minsNumber = coinGet - amount;
- document.getElementById('coin').innerText = minsNumber;
+  document.getElementById('coin').innerText = minsNumber;
+
+  let obj = {
+    name: 'পুলিশ',
+    number: 999,
+    date: new Date().toLocaleTimeString()
+  };
+
+  countCall.push(obj)
+
 
 })
 // * 3nd coin function
