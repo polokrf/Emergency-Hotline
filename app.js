@@ -4,7 +4,9 @@ let countCall = [];
 // * display block
 document.getElementById('call-history').addEventListener('click', function (e) {
   e.preventDefault();
+  document.getElementById('card-main').style.display='none';
   document.getElementById('history').style.display = 'block';
+  document.getElementById('history').style.height = '100%';
   document.getElementById('back-history').style.display = 'block';
   document.getElementById('call-history').style.display = 'none';
 });
@@ -16,6 +18,7 @@ document.getElementById('back-history')
     document.getElementById('history').style.display = 'none';
     document.getElementById('back-history').style.display = 'none';
     document.getElementById('call-history').style.display = 'block';
+    document.getElementById('card-main').style.display = 'block';
   });
 
 
@@ -38,249 +41,74 @@ for (let count of counts) {
   })
 }
 
-// * call back function;
-function getValueText(id) {
-  
-  let text = document.getElementById(id);
-  let coinCut = parseInt(text.innerText);
-  return coinCut;
-}
-function getValueTexts(id) {
-  
-  let text = document.getElementById(id);
-  
-  return text;
-}
 
+// * coin add function
 
-// * set value in inner text
+document.getElementById('card-main').addEventListener('click', function (e) {
+  if (e.target.className.includes('coin-button')) {
+    let button = e.target
+    let subTitle = button.parentNode.parentNode.children[1].children[1].innerText;
+    let helpNumber = button.parentNode.parentNode.children[2].innerText;
+    let mainTitle = button.parentNode.parentNode.children[1].children[0].innerText;
+    let date = new Date().toLocaleTimeString();
+    
+    let setHistory = document.getElementById('mains');
 
-// * coin cut if do you calling;
+    let coinMins = parseInt(document.getElementById('coin').innerText);
 
-document.getElementById('call-button1').addEventListener('click',function() {
-  
-  let coinGet = getValueText('coin');
-  let subtitleText = document.getElementById('subtitle1').innerText;
-  let numberOfServes = document.getElementById('number1').innerText;
+    if (coinMins === 0) {
+      alert('আপনার পর্যাপ্ত কয়েন নেই!  কল করতে কমপক্ষে ২০ কয়েন লাগবে');
+      return;
+    } else {
+      alert(`Calling ${subTitle} ${helpNumber}`)
+    }
 
- 
-  let amount = 20;
-  if (coinGet === 0) {
-    alert('আপনার পর্যাপ্ত কয়েন নেই!  কল করতে কমপক্ষে ২০ কয়েন লাগবে');
-    return;
-  } else {
-    alert(`Calling ${subtitleText} ${numberOfServes}`);
+    let createDiv = document.createElement('div');
+    createDiv.innerHTML = `<div  class=" flex justify-between items-center p-[15px] my-[25px] bg-slate-300 rounded-md shadow-md">
+            <div>
+              <h2 class="text-[20px] font-bold">${mainTitle}</h2>
+              <p class="font-bold text-[#5C5C5C]">${helpNumber}</p>
+            </div>
+            <div>
+              <p>${date}</p>
+            </div>
+           </div> 
+`;
+    
+    setHistory.append(createDiv);
+
+    
+    
+    let count = coinMins - 20;
+    let minsBalance = 0;
+    document.getElementById('coin').innerText = count;
   }
+});
+
+
+// * clear button
+
+document.getElementById('clear-button').addEventListener('click', function () {
+  let setHistory = document.getElementById('mains');
+  let clears = setHistory.innerHTML = '';
   
-  let minsNumber = coinGet - amount;
-  document.getElementById('coin').innerText = minsNumber;
-
-  let obj = {
-    name: 'জাতীয় জরুরি সেবা',
-    number: 999,
-    date: new Date().toLocaleTimeString()
-  };
-
-  countCall.push(obj)
-
-})
+});
 
 
+// * copy past and count
 
+document.getElementById('card-main').addEventListener('click', function (e) {
+  if (e.target.className.includes('copy')) {
+     let button = e.target;
+    let helpNumber = button.parentNode.parentNode.children[2].innerText;
+    alert('নাম্বার কপি হয়েছে : ' + helpNumber);
 
+    navigator.clipboard.writeText(helpNumber);
+   
 
-// * 2nd coin function
-document.getElementById('call-button2').addEventListener('click',function() {
-  
-  let coinGet = getValueText('coin');
-  let subtitleText = document.getElementById('subtitle2').innerText;
-  let numberOfServes = document.getElementById('number2').innerText;
- 
-  let amount = 20;
-  if (coinGet === 0) {
-    alert('আপনার পর্যাপ্ত কয়েন নেই!  কল করতে কমপক্ষে ২০ কয়েন লাগবে');
-    return;
-  } else {
-    alert(`Calling ${subtitleText} ${numberOfServes}`);
+    let copyCount = parseInt(document.getElementById('copy-button').innerText);
+    let copyNumber = copyCount + 1;
+    document.getElementById('copy-button').innerText = copyNumber;
+
   }
-  
-  let minsNumber = coinGet - amount;
-  document.getElementById('coin').innerText = minsNumber;
-
-  let obj = {
-    name: 'পুলিশ',
-    number: 999,
-    date: new Date().toLocaleTimeString()
-  };
-
-  countCall.push(obj)
-
-
-})
-// * 3nd coin function
-document.getElementById('call-button3').addEventListener('click',function() {
-  
-  let coinGet = getValueText('coin');
-  let subtitleText = document.getElementById('subtitle3').innerText;
-  let numberOfServes = document.getElementById('number3').innerText;
- 
-  let amount = 20;
-  if (coinGet === 0) {
-    alert('আপনার পর্যাপ্ত কয়েন নেই!  কল করতে কমপক্ষে ২০ কয়েন লাগবে');
-    return;
-  } else {
-    alert(`Calling ${subtitleText} ${numberOfServes}`);
-  }
-  
-  let minsNumber = coinGet - amount;
- document.getElementById('coin').innerText = minsNumber;
-
-})
-
-
-// * 4nd coin function
-document.getElementById('call-button4').addEventListener('click',function() {
-  
-  let coinGet = getValueText('coin');
-  let subtitleText = document.getElementById('subtitle4').innerText;
-  let numberOfServes = document.getElementById('number4').innerText;
- 
-  let amount = 20;
-  if (coinGet === 0) {
-    alert('আপনার পর্যাপ্ত কয়েন নেই!  কল করতে কমপক্ষে ২০ কয়েন লাগবে');
-    return;
-  } else {
-    alert(`Calling ${subtitleText} ${numberOfServes}`);
-  }
-  
-  let minsNumber = coinGet - amount;
- document.getElementById('coin').innerText = minsNumber;
-
-})
-
-
-
-
-
-// * 5nd coin function
-document.getElementById('call-button5').addEventListener('click',function() {
-  
-  let coinGet = getValueText('coin');
-  let subtitleText = document.getElementById('subtitle5').innerText;
-  let numberOfServes = document.getElementById('number5').innerText;
- 
-  let amount = 20;
-  if (coinGet === 0) {
-    alert('আপনার পর্যাপ্ত কয়েন নেই!  কল করতে কমপক্ষে ২০ কয়েন লাগবে');
-    return;
-  } else {
-    alert(`Calling ${subtitleText} ${numberOfServes}`);
-  }
-  
-  let minsNumber = coinGet - amount;
- document.getElementById('coin').innerText = minsNumber;
-
-})
-
-
-
-
-
-// * 6nd coin function
-document.getElementById('call-button6').addEventListener('click',function() {
-  
-  let coinGet = getValueText('coin');
-  let subtitleText = document.getElementById('subtitle6').innerText;
-  let numberOfServes = document.getElementById('number6').innerText;
- 
-  let amount = 20;
-  if (coinGet === 0) {
-    alert('আপনার পর্যাপ্ত কয়েন নেই!  কল করতে কমপক্ষে ২০ কয়েন লাগবে');
-    return;
-  } else {
-    alert(`Calling ${subtitleText} ${numberOfServes}`);
-  }
-  
-  let minsNumber = coinGet - amount;
- document.getElementById('coin').innerText = minsNumber;
-
-})
-
-
-
-
-
-// * 7nd coin function
-document.getElementById('call-button7').addEventListener('click',function() {
-  
-  let coinGet = getValueText('coin');
-  let subtitleText = document.getElementById('subtitle7').innerText;
-  let numberOfServes = document.getElementById('number7').innerText;
- 
-  let amount = 20;
-  if (coinGet === 0) {
-    alert('আপনার পর্যাপ্ত কয়েন নেই!  কল করতে কমপক্ষে ২০ কয়েন লাগবে');
-    return;
-  } else {
-    alert(`Calling ${subtitleText} ${numberOfServes}`);
-  }
-  
-  let minsNumber = coinGet - amount;
- document.getElementById('coin').innerText = minsNumber;
-
-})
-
-
-
-
-
-
-// * 8nd coin function
-document.getElementById('call-button8').addEventListener('click',function() {
-  
-  let coinGet = getValueText('coin');
-  let subtitleText = document.getElementById('subtitle8').innerText;
-  let numberOfServes = document.getElementById('number8').innerText;
- 
-  let amount = 20;
-  if (coinGet === 0) {
-    alert('আপনার পর্যাপ্ত কয়েন নেই!  কল করতে কমপক্ষে ২০ কয়েন লাগবে');
-    return;
-  } else {
-    alert(`Calling ${subtitleText} ${numberOfServes}`);
-  }
-  
-  let minsNumber = coinGet - amount;
- document.getElementById('coin').innerText = minsNumber;
-
-})
-
-
-
-
-
-
-// * 9nd coin function
-document.getElementById('call-button9').addEventListener('click',function() {
-  
-  let coinGet = getValueText('coin');
-  let subtitleText = document.getElementById('subtitle9').innerText;
-  let numberOfServes = document.getElementById('number9').innerText;
- 
-  let amount = 20;
-  if (coinGet === 0) {
-    alert('আপনার পর্যাপ্ত কয়েন নেই!  কল করতে কমপক্ষে ২০ কয়েন লাগবে');
-    return;
-  } else {
-    alert(`Calling ${subtitleText} ${numberOfServes}`);
-  }
-  
-  let minsNumber = coinGet - amount;
- document.getElementById('coin').innerText = minsNumber;
-
-})
-
-
-
-
-
+});
