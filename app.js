@@ -1,27 +1,4 @@
-let countCall = [];
 
-
-// * display block
-document.getElementById('call-history').addEventListener('click', function (e) {
-  e.preventDefault();
-  document.getElementById('card-main').style.display='none';
-  document.getElementById('history').style.display = 'block';
-  document.getElementById('history').style.height = '100%';
-  document.getElementById('back-history').style.display = 'block';
-  document.getElementById('call-history').style.display = 'none';
-});
-
-// * clear
-document.getElementById('back-history')
-  .addEventListener('click', function (e) {
-    e.preventDefault();
-    document.getElementById('history').style.display = 'none';
-    document.getElementById('back-history').style.display = 'none';
-    document.getElementById('call-history').style.display = 'block';
-    document.getElementById('card-main').style.display = 'block';
-   
-
-  });
 
 
 
@@ -68,7 +45,7 @@ document.getElementById('card-main').addEventListener('click', function (e) {
     let createDiv = document.createElement('div');
     createDiv.innerHTML = `<div  class=" flex justify-between items-center p-[15px] my-[25px] bg-[#FAFAFA] rounded-md shadow-md">
             <div>
-              <h2 class="md:text-[20px] font-bold">${mainTitle}</h2>
+              <h2 class=" font-bold">${mainTitle}</h2>
               <p class="font-bold text-[#5C5C5C]">${helpNumber}</p>
             </div>
             <div>
