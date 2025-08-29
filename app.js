@@ -66,7 +66,7 @@ document.getElementById('card-main').addEventListener('click', function (e) {
     let createDiv = document.createElement('div');
     createDiv.innerHTML = `<div  class=" flex justify-between items-center p-[15px] my-[25px] bg-[#FAFAFA] rounded-md shadow-md">
             <div>
-              <h2 class="text-[20px] font-bold">${mainTitle}</h2>
+              <h2 class="md:text-[20px] font-bold">${mainTitle}</h2>
               <p class="font-bold text-[#5C5C5C]">${helpNumber}</p>
             </div>
             <div>
