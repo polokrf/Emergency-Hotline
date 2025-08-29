@@ -19,7 +19,7 @@ Ans: Event Bubbling হলো javascript   Dom Event  এর একটি অত
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
-Ans: Event Delegation হচ্ছে আমারা childe Element  এ Action না ঘটিয়ে  ঘটিয়ে সরারি parent Element কে ধরে Event Action ঘটাই
+Ans: Event Delegation হচ্ছে আমারা childe Element  এ Action না ঘটিয়ে  সরারি parent Element কে ধরে Event Action ঘটাই
 
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
