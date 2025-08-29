@@ -19,6 +19,8 @@ document.getElementById('back-history')
     document.getElementById('back-history').style.display = 'none';
     document.getElementById('call-history').style.display = 'block';
     document.getElementById('card-main').style.display = 'block';
+   
+
   });
 
 
