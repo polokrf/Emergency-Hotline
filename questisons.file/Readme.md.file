@@ -1,28 +1,28 @@
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
-Ans : ১. getElementById দিয়ে শুধু আমার একটি Element বা Id ধরে কাজ করতে পারি। 
+Ans : ১. getElementById দিয়ে শুধু একটি Element পাওয়া যাই
+২. আর getElementsByClassName  দিয়ে   Array of Elements পাওয়া যাই
+৩. querySelector দিয়ে  ১টি মাত্র Elment পাওয়া যাই
+৪.  querySelectorAll দিয়ে Array of Elements পাওয়া যাই
 
-২. আর getElementsByClassName  দিয়ে আমরা  একাধিক Element ধরে কাজ  করতে পারি বা এক সঙ্গে অনেক গুলা class ধরে কাজ করতে পারি। 
 
-৩. আমরা অনেক যখন parent থেকে  childe Element গুলো ইচ্ছা মতো ব্যাবহার করতে চাই তখন আমার querySeleCtor ব্যাবহার করি তবে এটা শুধু সেম নামের প্রথম Element  কে ধরে।  
-
-৪.  querySelectorAll এই একই নামের সব Element কে এক সাথে ধরে।
 
 2. How do you **create and insert a new element into the DOM**?
 
-Ans : হ্যা আমরা আমাদের প্রয়োজন অনুসারে Dom দিয়ে নতুন Element  তৈরি  করতে পারি।
+Ans:হ্যা আমরা আমাদের প্রয়োজন অনুসারে Dom দিয়ে নতুন Element  তৈরি  করতে পারি।
 
  
  3. What is **Event Bubbling** and how does it work?
+
 Ans: Event Bubbling হলো javascript   Dom Event  এর একটি অতি স্বাভাবিক বিষয়। এটি সাধারণ Event কোথায় Action করছে সেটা নির্ণয় করে। তারপর  Action কৃত জায়গা খুজে পেলে ধাপে ধাপে  উপরে উঠতে থাকে।
 
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+
 Ans: Event Delegation হচ্ছে আমারা childe Element  এ Action না ঘটিয়ে  ঘটিয়ে সরারি parent Element কে ধরে Event Action ঘটাই
 
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
 Ans: ১. preventDefault() সাধারণত  form এর স্বাভাবিক রিলোড আচারণ  বন্ধ করে।  
-
-     ২. StopPropagation () সাধারণত Event Bubbling এর স্বাভাবিক আচারণ বন্ধ করে।
+   ২. StopPropagation () সাধারণত Event Bubbling এর স্বাভাবিক আচারণ বন্ধ করে।
